@@ -1,0 +1,10 @@
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+/componentes/
+/models/
+/Voice Model/
+/datos/
+/TranscriptionMedia.exe
