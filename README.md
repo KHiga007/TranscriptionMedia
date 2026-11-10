@@ -4,9 +4,9 @@ Aplicación de escritorio para Windows que convierte audio en español a texto. 
 
 ## Descargar
 
-La versión portable se publicará en [Releases](https://github.com/KHiga007/TranscriptionMedia/releases). Todavía no hay una descarga disponible.
+Descargá el [ZIP portable para Windows x64](https://github.com/KHiga007/TranscriptionMedia/releases/download/v1.0.0/TranscriptionMedia-v1.0.0-win-x64.zip) desde [Releases](https://github.com/KHiga007/TranscriptionMedia/releases).
 
-Cuando esté publicada, descargá el paquete, extraé su contenido y abrí **TranscriptionMedia.exe**. El paquete portable incluirá el entorno de ejecución de .NET y el modelo Whisper. Conservá los archivos extraídos juntos.
+Extraé todo el contenido y abrí **TranscriptionMedia.exe**. El paquete incluye .NET 8 y el modelo Whisper. Conservá los archivos extraídos juntos.
 
 
 ## Uso
