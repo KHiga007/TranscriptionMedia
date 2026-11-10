@@ -4,11 +4,12 @@ Aplicación de escritorio para Windows que convierte audio en español a texto. 
 
 ## Requisitos
 
-- Windows 11 de 64 bits y SDK de .NET 8 para compilar. Si usás Visual Studio, instalá la carga de trabajo **Desarrollo de escritorio de .NET**.
-- Se recomiendan 8 GB de RAM. Windows 10 y equipos con 4 GB quedan pendientes de validación.
+- **.NET 8 Desktop Runtime (x64)** para ejecutar la app.
 - Modelo [Whisper large-v3 Q5_0](https://huggingface.co/ggerganov/whisper.cpp/blob/fb5ed9369c26eaf08392504d8446da431e0fffb9/ggml-large-v3-q5_0.bin), de aproximadamente 1,1 GB. Descargalo una vez. Luego la transcripción funciona sin conexión.
 
 ## Compilar y ejecutar
+
+Para compilar, instalá el **SDK de .NET 8**. Si usás Visual Studio, agregá la carga de trabajo **Desarrollo de escritorio de .NET**.
 
 1. Desde la raíz del repositorio, ejecutá el siguiente comando o abrí [TranscriptionMedia.sln](TranscriptionMedia.sln) en Visual Studio.
 
