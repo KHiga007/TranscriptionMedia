@@ -2,23 +2,12 @@
 
 Aplicación de escritorio para Windows que convierte audio en español a texto. Podés grabar desde el micrófono o transcribir un archivo. El procesamiento y el historial quedan en tu computadora.
 
-## Requisitos
+## Descargar
 
-- **.NET 8 Desktop Runtime (x64)** para ejecutar la app.
-- Modelo [Whisper large-v3 Q5_0](https://huggingface.co/ggerganov/whisper.cpp/blob/fb5ed9369c26eaf08392504d8446da431e0fffb9/ggml-large-v3-q5_0.bin), de aproximadamente 1,1 GB. Descargalo una vez. Luego la transcripción funciona sin conexión.
+La versión portable se publicará en [Releases](https://github.com/KHiga007/TranscriptionMedia/releases). Todavía no hay una descarga disponible.
 
-## Compilar y ejecutar
+Cuando esté publicada, descargá el paquete, extraé su contenido y abrí **TranscriptionMedia.exe**. El paquete portable incluirá el entorno de ejecución de .NET y el modelo Whisper. Conservá los archivos extraídos juntos.
 
-Para compilar, instalá el **SDK de .NET 8**. Si usás Visual Studio, agregá la carga de trabajo **Desarrollo de escritorio de .NET**.
-
-1. Desde la raíz del repositorio, ejecutá el siguiente comando o abrí [TranscriptionMedia.sln](TranscriptionMedia.sln) en Visual Studio.
-
-   ~~~powershell
-   dotnet build TranscriptionMedia.sln -c Release
-   ~~~
-
-2. Creá la carpeta **Voice Model** dentro de **bin/Release/net8.0-windows/** y guardá ahí el archivo **ggml-large-v3-q5_0.bin**.
-3. Abrí **TranscriptionMedia.exe** desde **bin/Release/net8.0-windows/**. Si compilaste en Debug, usá **bin/Debug/net8.0-windows/**.
 
 ## Uso
 
@@ -39,6 +28,20 @@ El historial se guarda en **datos/** junto a la app, cifrado con SQLCipher y con
 | [Views](Views/) | Interfaz WPF y presentación. |
 | [Services](Services/) | Motor, procesamiento de audio e integración con Windows. |
 | [Diagnostics](Diagnostics/) | Pruebas de regresión disponibles al compilar con AUDIT_DIAGNOSTICS. Las pruebas con audio usan un archivo local llamado prueba-es.wav junto al informe. |
+
+<details>
+<summary>Compilar desde el código fuente</summary>
+
+Instalá el SDK de .NET 8 y ejecutá el siguiente comando desde la raíz del repositorio.
+
+~~~powershell
+dotnet build TranscriptionMedia.sln -c Release
+~~~
+
+Descargá el modelo [Whisper large-v3 Q5_0](https://huggingface.co/ggerganov/whisper.cpp/blob/fb5ed9369c26eaf08392504d8446da431e0fffb9/ggml-large-v3-q5_0.bin) y guardalo en **bin/Release/net8.0-windows/Voice Model/**. Abrí **TranscriptionMedia.exe** desde **bin/Release/net8.0-windows/**.
+
+</details>
+
 
 ## Licencia
 
